@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. First of all, let's add TypeScript :) It's a live documentation and it helps to understand what's going on in the code. It also helps a lot with refactoring and warns about possible errors at compile time.

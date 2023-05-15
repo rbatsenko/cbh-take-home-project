@@ -1,4 +1,4 @@
-const { deterministicPartitionKey } = require("./dpk");
+import { deterministicPartitionKey } from "./dpk.js";
 
 describe("deterministicPartitionKey", () => {
   it("Returns the literal '0' when given no input", () => {
