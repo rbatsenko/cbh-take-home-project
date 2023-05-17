@@ -1,3 +1,3 @@
-import { getDeterministicPartitionKey } from "./dpk.js";
+import { getDeterministicPartitionKey } from "./dpk";
 
 console.log(getDeterministicPartitionKey());

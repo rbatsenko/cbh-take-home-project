@@ -1,5 +1,4 @@
-// @ts-ignore
-import { getDeterministicPartitionKey, getHash } from "./dpk.ts";
+import { getDeterministicPartitionKey, getHash } from "./dpk";
 
 describe("getHash", () => {
   it("Returns a hash of the input", () => {
