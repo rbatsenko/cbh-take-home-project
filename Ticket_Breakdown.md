@@ -17,7 +17,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
-Note: I would be really curious to ask our clients (Facilities) the question about what exact business problem they're trying to solve here, because maybe it can be solved better without additional custom ids. But for now let's assume that this is a requirement we need to implement.
+> **Note:** I would be really curious to ask our clients (Facilities) the question about what exact business problem they're trying to solve here, because maybe it can be solved better without additional custom ids. But for now let's assume that this is a requirement we need to implement.
+
 
 Let's define requirements and architecture for this feature.
 1. We need to have a table with the `agent_id`, `facility_id` and `facility_agent_id` for each record. This table will be called `facilities_agents` and will have the following columns:
@@ -29,7 +30,9 @@ This solution will allow us to separate information which is related to connecti
 2. Now we can update the `getShiftsByFacility` function to return the `facility_agent_id` together with `agent_id` for each agent.
 3. We need to update the `generateReport` function to use the `facility_agent_id` instead of `agent_id` when generating the report.
 
-Note: I would also communicate with the client on potential `facility_agent_id` format, as we need to have a validation for it, so we can leverage some auto-generate functionality (button) or allow to pass it, but validate on both FE and BE. Thinking about this makes me once again wonder about the exact business problem we're trying to solve here :)
+Here is a diagram in Excalidraw I came up with to better visualize the solution: [Solution diagram](https://excalidraw.com/#json=1D9g_INUrf17mcQGF8uHK,OsWJTvnHExEUdlxcrSdyxQ) - You can also find the file in the root folder of this repo (`ticket_breakdown_diagram.excalidraw`)
+
+> **Note:** I would also communicate with the client on potential `facility_agent_id` format, as we need to have a validation for it, so we can leverage some auto-generate functionality (button) or allow to pass it, but validate on both FE and BE. Thinking about this makes me once again wonder about the exact business problem we're trying to solve here :)
 
 ### Tickets
 
@@ -88,6 +91,7 @@ Note: I would also communicate with the client on potential `facility_agent_id` 
     - Implementation details:
         - depending on discussed requirements (discuss with the team, product, client)
 
-Again - there is still a lot of questions to be answered, but I think this is a good start. I would also discuss this with the team and the client to make sure we're on the same page and we're solving the right problem.
 
-Note: communication is everything - great products solve user needs, not some imaginary problems we think they have =)
+> Again - there is still a lot of questions to be answered, but I think this is a good start. I would also discuss this with the team and the client to make sure we're on the same page and we're solving the right problem.
+
+> **Note:** communication is everything - great products solve user needs, not some imaginary problems we think they have =)
